@@ -25,6 +25,7 @@
             ['icon' => '⚔️', 'title' => 'Battle', 'href' => route('battle-nama')],
             ['icon' => '🌈', 'title' => 'Aura', 'href' => route('aura')],
             ['icon' => '🔥', 'title' => 'Roast', 'href' => route('roast')],
+            ['icon' => '👻', 'title' => 'Cek Khodam', 'href' => route('cek-khodam')],
             ['icon' => '🎯', 'title' => 'Spinner', 'href' => route('spinner')],
             ['icon' => '🏆', 'title' => 'Leaderboard', 'href' => route('leaderboard')],
         ];

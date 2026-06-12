@@ -39,6 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/aura', \App\Livewire\AuraDetector::class)->name('aura');
     Route::get('/roast', \App\Livewire\RoastGenerator::class)->name('roast');
     Route::get('/spinner', \App\Livewire\SpinnerWheel::class)->name('spinner');
+    Route::get('/cek-khodam', \App\Livewire\KhodamCheck::class)->name('cek-khodam');
 });
 
 // Admin Routes

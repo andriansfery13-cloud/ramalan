@@ -37,6 +37,7 @@
                 ['icon' => '⚔️', 'title' => 'Battle Nama', 'desc' => 'Adu skor dua nama dengan animasi VS', 'href' => route('battle-nama'), 'color' => 'from-red-600/20 to-red-400/5'],
                 ['icon' => '🌈', 'title' => 'Detektor Aura', 'desc' => '7 tipe aura dengan kartu visual', 'href' => route('aura'), 'color' => 'from-cyan-600/20 to-cyan-400/5'],
                 ['icon' => '🔥', 'title' => 'AI Roast', 'desc' => 'Roasting lucu dan aman untuk hiburan', 'href' => route('roast'), 'color' => 'from-orange-600/20 to-orange-400/5'],
+                ['icon' => '👻', 'title' => 'Cek Khodam', 'desc' => 'Khodam hewan dan hantu kocak', 'href' => route('cek-khodam'), 'color' => 'from-indigo-600/20 to-indigo-400/5'],
                 ['icon' => '🎯', 'title' => 'Spinner Nama', 'desc' => 'Wheel of Fortune untuk pilih pemenang', 'href' => route('spinner'), 'color' => 'from-green-600/20 to-green-400/5'],
                 ['icon' => '🏆', 'title' => 'Leaderboard', 'desc' => 'Ranking viewer paling hoki', 'href' => route('leaderboard'), 'color' => 'from-yellow-600/20 to-yellow-400/5'],
             ];
