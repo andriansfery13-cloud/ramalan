@@ -53,6 +53,7 @@ Route::middleware(['auth', AdminMiddleware::class])->prefix('admin')->name('admi
     Route::get('/templates', \App\Livewire\Admin\TemplateManager::class)->name('templates');
     Route::get('/categories', \App\Livewire\Admin\CategoryManager::class)->name('categories');
     Route::get('/openai', function() { return redirect()->route('admin.mode'); })->name('openai');
+    Route::get('/tiktok', \App\Livewire\Admin\TiktokSettings::class)->name('tiktok');
     Route::get('/overlay-settings', \App\Livewire\Admin\OverlaySettings::class)->name('overlay');
     Route::get('/statistics', \App\Livewire\Admin\Statistics::class)->name('statistics');
     Route::get('/users', \App\Livewire\Admin\UserManager::class)->name('users');

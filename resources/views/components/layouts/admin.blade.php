@@ -51,6 +51,7 @@
 
                 <p class="text-xs uppercase tracking-wider text-slate-500 mb-2 mt-5 px-3">Integrasi</p>
                 <x-admin-nav-link href="{{ route('admin.openai') }}" :active="request()->routeIs('admin.openai')" icon="cpu">OpenAI</x-admin-nav-link>
+                <x-admin-nav-link href="{{ route('admin.tiktok') }}" :active="request()->routeIs('admin.tiktok')" icon="chat">TikTok Live</x-admin-nav-link>
                 <x-admin-nav-link href="{{ route('admin.mode') }}" :active="request()->routeIs('admin.mode')" icon="switch">Mode Switch</x-admin-nav-link>
                 <x-admin-nav-link href="{{ route('admin.overlay') }}" :active="request()->routeIs('admin.overlay')" icon="eye">Overlay</x-admin-nav-link>
 

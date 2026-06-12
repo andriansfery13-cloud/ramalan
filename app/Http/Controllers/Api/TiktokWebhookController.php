@@ -46,22 +46,8 @@ class TiktokWebhookController extends Controller
         // Broadcast comment to frontend for overlay display
         event(new TiktokCommentReceived($data));
 
-        // Auto Ramalan Mode Check
-        $isAutoMode = AppSetting::getValue('tiktok_auto_mode', 'false') === 'true';
-        if (!$isAutoMode) return;
-
-        $triggerKeyword = strtolower(AppSetting::getValue('tiktok_trigger_keyword', 'ramal aku'));
-        $comment = strtolower($data['comment'] ?? '');
-
-        if (str_contains($comment, $triggerKeyword)) {
-            // Remove trigger keyword to get potential specific category request, or just generate general
-            $username = $data['uniqueId'];
-            
-            // Auto generate fortune
-            $fortuneService = app(FortuneService::class);
-            // Default category for TikTok live is 'tiktok-live'
-            $fortuneService->generate($username, 'tiktok-live', null, null);
-        }
+        // Dispatch job to parse commands and generate fortunes/khodams
+        \App\Jobs\ProcessTiktokComment::dispatch($data);
     }
 
     private function handleGift(array $data)
